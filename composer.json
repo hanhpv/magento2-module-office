@@ -1,6 +1,6 @@
 {
   "name": "hans/module-office",
-  "description": "Manage your company departments, employees."
+  "description": "Manage your company departments, employees.",
   "type": "magento2-module",
   "version": "0.1.0",
   "authors": [
