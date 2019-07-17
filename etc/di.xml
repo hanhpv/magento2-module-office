@@ -4,4 +4,16 @@
         <plugin name="officePlugin2" type="Hans\Office\Block\Catalog\Product\AbstractProductPlugin2" sortOrder="2"/>
         <plugin name="officePlugin3" type="Hans\Office\Block\Catalog\Product\AbstractProductPlugin3" sortOrder="3"/>
     </type>
+
+    <!-- Define storage class for Hans\Office\Model\Session -->
+    <virtualType name="Hans\Office\Model\Session\Storage" type="Magento\Framework\Session\Storage">
+        <arguments>
+            <argument name="namespace" xsi:type="string">hans</argument>
+        </arguments>
+    </virtualType>
+    <type name="Hans\Office\Model\Session">
+        <arguments>
+            <argument name="storage" xsi:type="object">Hans\Office\Model\Session\Storage</argument>
+        </arguments>
+    </type>
 </config>
