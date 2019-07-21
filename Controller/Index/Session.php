@@ -18,8 +18,10 @@ class Session extends Action
     protected $session;
 
     /**
+     * Session constructor.
      * @param Context $context
      * @param PageFactory $pageFactory
+     * @param \Hans\Office\Model\Session $session
      */
     public function __construct(
         Context $context,
