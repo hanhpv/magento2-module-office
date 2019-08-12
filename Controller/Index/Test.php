@@ -31,7 +31,6 @@ class Test extends Action
     {
         /** @var \Magento\Framework\View\Result\Page $resultPage */
         $resultPage = $this->pageFactory->create();
-//        return $resultPage;
-        return $this->_redirect('office/index/collection');
+        return $resultPage;
     }
 }

@@ -1,0 +1,15 @@
+<?php /** @var \Magento\Framework\View\Element\Template $block */?>
+
+<h1><?= $block->getSomeString() ?></h1>
+<h2><?= $block->getAMillionPossibilities() . ' khả năng' ?></h2>
+<p>
+    <a href="<?= $block->getShoppingCartUrl() ?>">Shopping Cart</a>
+</p>
+<p>
+    <select name="department">
+        <?php foreach ($block->getDepartments() as $department): ?>
+        <option name="<?= $department['value'] ?>"><?= $department['label'] ?></option>
+        <?php endforeach; ?>
+    </select>
+</p>
+<p><?= __('Is module output enabled:') ?> <?= $block->getIsModuleOutputEnabled() ?></p>

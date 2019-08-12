@@ -1,0 +1,17 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="div.sidebar.main">
+            <block class="Magento\Framework\View\Element\Template" template="Hans_Office::test.phtml">
+                <arguments>
+                    <argument name="some_string" xsi:type="string">Bài hát</argument>
+                    <argument name="a_million_possibilities" xsi:type="number">1000000</argument>
+                    <argument name="shopping_cart_url" xsi:type="url" path="checkout/cart"/>
+                    <argument name="departments" xsi:type="options" model="Hans\Office\Model\Config\Source\Departments"/>
+                    <argument name="is_module_output_enabled" xsi:type="helper" helper="Hans\Office\Helper\Data::isModuleOutputEnabled">
+                        <param name="moduleName">Hans_Office</param>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
