@@ -13,5 +13,6 @@ Sample module for learning Magento 2. This module will cover everything we shoul
 
 4. Create a custom session class: https://github.com/hanhpv/magento2-module-office/commit/de287ab6f42f8911c7e89efee11faf658eeb06f6
 
+5. Layout block argument types: https://github.com/hanhpv/magento2-module-office/commit/93eca890f9b1d9586f789e77419dcc4d3d19d8c6
 
 
