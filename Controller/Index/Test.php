@@ -29,6 +29,7 @@ class Test extends Action
      */
     public function execute()
     {
+        $objectManager = $this->_objectManager;
         /** @var \Magento\Framework\View\Result\Page $resultPage */
         $resultPage = $this->pageFactory->create();
         return $resultPage;
