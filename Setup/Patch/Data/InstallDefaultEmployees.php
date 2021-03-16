@@ -79,9 +79,7 @@ class InstallDefaultEmployees implements DataPatchInterface
      */
     public function getAliases()
     {
-        return [
-            InstallDefaultAttributes::class
-        ];
+        return [];
     }
 
     /**
